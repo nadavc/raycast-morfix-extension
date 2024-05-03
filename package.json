@@ -1,0 +1,43 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "morfix-crawler",
+  "title": "morfix-crawler",
+  "description": "Translates English to Hebrew",
+  "icon": "command-icon.png",
+  "author": "nadavc",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "morfix",
+      "title": "Translate to Hebrew",
+      "description": "Template for running a script without any view",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.69.0",
+    "@raycast/utils": "^1.15.0",
+    "axios": "^1.6.8",
+    "node-html-parser": "^6.1.13"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-typescript": "^7.24.1",
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/jest": "^29.5.12",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "test": "jest",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
